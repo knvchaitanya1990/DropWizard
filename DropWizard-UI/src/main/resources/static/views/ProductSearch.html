@@ -1,0 +1,57 @@
+<div class="row">
+	<h3 class="text-center">Search for the Existing PhoneBook Entry</h3>
+	<form name="searchForm">
+		<div class="row" ng-init="loadPage()">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<div class="input-group">
+					<input ng-model="ID" type="text" class="form-control"
+						placeholder="Enter customer ID" required>
+					<div class="input-group-btn">
+						<button class="btn btn-default" ng-click="searchProduct()"
+							type="submit">
+							<i class="glyphicon glyphicon-search"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+		<div class="row"
+			ng-if="searchResult.length !== 0 && searchResult !== 'start' ">
+			<div class="col-md-12">
+				<table class="table table-bordered">
+					<tr>
+						<th>Customer ID</th>
+						<th>firstname</th>
+						<th>lastname</th>
+						<th>Category</th>
+						<th>email</th>
+						<th>phnumber</th>
+						<th>address</th>
+					</tr>
+				 	<tr>
+						<td>{{searchResult.id}}</td>
+						<td>{{searchResult.firstname}}</td>
+						<td>{{searchResult.lastname}}</td>
+						<td>{{searchResult.category}}</td>
+						<td>{{searchResult.email}}</td>
+						<td>{{searchResult.phnumber}}</td>
+						<td>{{searchResult.address}}</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		<div class="row"
+			ng-if="searchResult.length === 0 && searchResult !== 'start' ">
+			<center>
+				<h4 class="text-danger">No record Found with the Given Customer ID.</h4>
+			</center>
+		</div>
+
+	</form>
+</div>
+
+
+

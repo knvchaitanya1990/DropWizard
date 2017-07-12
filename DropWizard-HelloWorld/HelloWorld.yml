@@ -1,0 +1,9 @@
+server:
+  type: simple
+  applicationContextPath: /application
+  adminContextPath: /admin
+  connector:
+    type: http
+    port: 8055
+message: This is a message defined in the configuration
+messageRepetitions: 3

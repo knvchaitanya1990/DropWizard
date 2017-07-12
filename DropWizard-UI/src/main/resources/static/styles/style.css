@@ -1,0 +1,58 @@
+.navbar {
+	margin-bottom: -20px;
+	border-radius: 0;
+    background-color: #485563;
+}
+
+#footer{
+ position:fixed;
+ bottom:0;
+ left:0;
+ background-color: #485563; 
+ color: white;
+ width:110%    
+}
+
+#logo {
+	text-align: center;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+   font-family: sans-serif;
+}
+ 
+.homeimg{
+    margin-top: 10%;
+    margin-left: 7%;
+}
+.nestedNav{
+    margin-top: 4.5%;
+    margin-bottom: 4.5%;
+    
+}
+
+table {
+    border-spacing: 32px;
+    border-collapse: collapse;
+    margin-top: 2%;
+    border: 1px;
+    margin-bottom: 2%;
+}
+
+.table { border: 1px solid #2980B9; }
+.table thead > tr > th { border-bottom: none; }
+.table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td 
+{ border: 1px solid #2980B9; }
+
+img {
+    border: 0;
+    width: 50%;
+    margin-left: 25%;
+}
+
+input {
+	
+	margin-bottom: 5px;
+}

@@ -1,0 +1,11 @@
+server:
+  applicationConnectors:
+    - type: http
+      port: 8072
+    - type: https
+      port: 8443 
+  adminConnectors:
+    - type: http
+      port: 8083
+    - type: https
+      port: 8444

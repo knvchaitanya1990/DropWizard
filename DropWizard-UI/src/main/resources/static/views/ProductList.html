@@ -1,0 +1,29 @@
+
+<div ng-init="loadData()" class="row">
+	<div class="col-md-12">
+		<table class="table table-bordered">
+			<tr>
+				        <th>Customer ID</th>
+						<th>firstname</th>
+						<th>lastname</th>
+						<th>Category</th>
+						<th>email</th>
+						<th>phnumber</th>
+						<th>address</th>
+			</tr>
+			
+			<tr ng-repeat="Product in productsList">
+			
+						<td>{{Product.id}}</td>
+						<td>{{Product.firstname}}</td>
+						<td>{{Product.lastname}}</td>
+						<td>{{Product.category}}</td>
+						<td>{{Product.email}}</td>
+						<td>{{Product.phnumber}}</td>
+						<td>{{Product.address}}</td>
+
+			</tr>
+			
+		</table>
+	</div>
+</div>

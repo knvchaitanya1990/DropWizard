@@ -1,0 +1,79 @@
+<span us-spinner="{radius:30, width:8, length: 16}"
+	spinner-on="showSpinner"></span>
+<h3 class="text-center">Update Existing Phonebook Entries</h3>
+<div class="row">
+
+	<div class="col-md-5">
+		<!-- <span>A</span><br> <span>B</span><br> <span>C</span><br>
+		<span>D</span><br> <span>F</span><br> -->
+	</div>
+	<div class="col-md-3">
+		<br>
+		<form class="form-group">
+			<table>
+				<tr>
+					<td class="h5">Customer ID:</td>
+					<td colspan="5"><input type="text" ng-disabled="lookedup"
+						class="form-control" ng-model="productInput.id"
+						placeholder="Customer ID"></td>
+					<td></td>
+					<td>
+						<button class="btn  btn-info" ng-click="lookupProduct()">Look
+							up</button>
+					</td>
+				</tr>
+				<tr>
+					<td>First Name:</td>
+					<td><input type="text" class="form-control"
+						ng-model="productInput.firstname" placeholder="firstname"></td>
+				</tr>
+
+				<tr>
+					<td>Last Name:</td>
+					<td><input type="text" class="form-control"
+						ng-model="productInput.lastname" placeholder="lastname"></td>
+				</tr>
+
+				<tr>
+					<td>Phone Number:</td>
+					<td><input type="text" class="form-control"
+						ng-model="productInput.phnumber" placeholder="phnumber"></td>
+				</tr>
+				<tr>
+					<td>Address:</td>
+					<td><input type="text" class="form-control"
+						ng-model="productInput.address" placeholder="address"></td>
+				</tr>
+				<tr>
+					<td>Category:</td>
+					<td><input type="text" class="form-control"
+						ng-model="productInput.category" placeholder="category"></td>
+				</tr>
+
+
+				<tr>
+					<td>Email:</td>
+					<td><input type="text" class="form-control"
+						ng-model="productInput.email" placeholder="email"></td>
+				</tr>
+
+
+
+
+
+
+			</table>
+		</form>
+	</div>
+	<div class="col-md-4"></div>
+</div>
+
+<div class="row">
+	<div class="col-md-5"></div>
+	<div class="col-md-7">
+		<button ng-click="updatebutton()" class="btn btn-info">update</button>
+	</div>
+
+</div>
+
+</div>
